@@ -1,0 +1,65 @@
+
+
+#profilePicture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 15rem;
+}
+.profileIcons {
+    width: 1rem;
+    height: 1rem;
+}
+.cv-body {
+    display: flex;
+    flex-direction: row;
+    background: #ffff;
+}
+
+.cv-profileContainer {
+    display: flex;
+    flex-direction: column;
+    
+}
+.cv-profileInfo {
+    color: white;
+    background-image: linear-gradient(to right, black, #004B72);
+    width: 15rem;
+    height: fit-content;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: black 10px 5px 20px 5px 
+}
+.profineInfolayout {
+    display: flex;
+    flex-direction: row;
+}
+
+.cv-skills {
+    color: white;
+    background-image: linear-gradient(to right, black, #004B72);
+    width: 15rem;
+    height: fit-content;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: black 10px 5px 20px 5px 
+}
+
+.cv-mainContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80rem;
+    
+}
+.cv-mainSections {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-image: linear-gradient(to left, black, #004B72);
+    height: fit-content;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: black 10px 5px 20px 5px
+}
