@@ -1,11 +1,12 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 export default function NavBar() {
     return (
         <div className="navBar">
-            <div>Home</div>
-            <div>Media</div>
-            <div>Curriculum</div>
+            <NavLink to="Web-Media-Portfolio">
+                <h1>Home</h1>
+            </NavLink>
         </div>
     )
 }
