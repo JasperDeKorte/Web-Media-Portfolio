@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import './pages/cv/Cv.css';
+import "./components/navBar/navBar.css"
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

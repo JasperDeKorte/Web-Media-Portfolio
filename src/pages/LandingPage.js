@@ -4,6 +4,7 @@ import camera from "../assets/camera.png"
 import heart from "../assets/heart.png"
 import user from "../assets/user.png"
 import { motion } from "framer-motion"
+import NavBar from "../components/navBar/NavBar"
 
 export default function landingpage() {
     const pageTransitions = {
@@ -21,8 +22,9 @@ export default function landingpage() {
     };
 
     return (
-
+        
         <div className="landingPage-container">
+            <NavBar />
             <motion.div
                 initial="out"
                 animate="in"
