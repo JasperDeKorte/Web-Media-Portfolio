@@ -21,60 +21,64 @@ export default function landingpage() {
     };
 
     return (
-        <motion.div
-            initial="out"
-            animate="in"
-            exit="out"
-            transition="transition"
-            variants={pageTransitions}
-        >
-            <div className="landingPage-Container">
-                <motion.div className="landingPage-Items "
-                    whileHover={{ scale: 1.2 }}
-                    onHoverStart={e => { }}
-                    onHoverEnd={e => { }}
-                    whileTap={{ scale: 0.9 }}
 
-                >
-                    <NavLink to="/Media">
-                        <img className="landingPage-Items" src={camera} alt="not available" />
-                    </NavLink>
-                </motion.div>
+        <div className="landingPage-container">
+            <motion.div
+                initial="out"
+                animate="in"
+                exit="out"
+                transition="transition"
+                variants={pageTransitions}
+            >
+                <div className="landingPage-mainSection">
+                    <motion.div className="landingPage-Items "
+                        whileHover={{ scale: 1.2 }}
+                        onHoverStart={e => { }}
+                        onHoverEnd={e => { }}
+                        whileTap={{ scale: 0.9 }}
 
-                <motion.div className="landingPage-Items"
-                    whileHover={{ scale: 1.2 }}
-                    onHoverStart={e => { }}
-                    onHoverEnd={e => { }}
-                    whileTap={{ scale: 0.9 }}
-                >
-                    <NavLink to="/Profile">
-                        <img className="landingPage-Items" src={user} alt="not available" />
-                    </NavLink>
-                </motion.div>
+                    >
+                        <NavLink to="/Media">
+                            <img className="landingPage-Items" src={camera} alt="not available" />
+                        </NavLink>
+                    </motion.div>
 
-                <motion.div className="landingPage-Items"
-                    whileHover={{ scale: 1.2 }}
-                    onHoverStart={e => { }}
-                    onHoverEnd={e => { }}
-                    whileTap={{ scale: 0.9 }}
-                >
-                    <NavLink to="/Cv">
-                    <img className="landingPage-Items" src={heart} alt="not available" />
-                    </NavLink>
-                </motion.div>
+                    <motion.div className="landingPage-Items"
+                        whileHover={{ scale: 1.2 }}
+                        onHoverStart={e => { }}
+                        onHoverEnd={e => { }}
+                        whileTap={{ scale: 0.9 }}
+                    >
+                        <NavLink to="/Profile">
+                            <img className="landingPage-Items" src={user} alt="not available" />
+                        </NavLink>
+                    </motion.div>
 
-                <motion.div className="landingPage-Items"
-                    whileHover={{ scale: 1.2 }}
-                    onHoverStart={e => { }}
-                    onHoverEnd={e => { }}
-                    whileTap={{ scale: 0.9 }}
-                >
-                    <img className="landingPage-Items" src={heart} alt="not available" />
-                </motion.div>
+                    <motion.div className="landingPage-Items"
+                        whileHover={{ scale: 1.2 }}
+                        onHoverStart={e => { }}
+                        onHoverEnd={e => { }}
+                        whileTap={{ scale: 0.9 }}
+                    >
+                        <NavLink to="/Cv">
+                            <img className="landingPage-Items" src={heart} alt="not available" />
+                        </NavLink>
+                    </motion.div>
+
+                    <motion.div className="landingPage-Items"
+                        whileHover={{ scale: 1.2 }}
+                        onHoverStart={e => { }}
+                        onHoverEnd={e => { }}
+                        whileTap={{ scale: 0.9 }}
+                    >
+                        <img className="landingPage-Items" src={heart} alt="not available" />
+                    </motion.div>
 
 
-            </div>
-        </motion.div>
+                </div>
+            </motion.div>
+        </div>
+
     )
 }
 
