@@ -8,8 +8,8 @@ import {
   useLocation,
 } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
-import Media from "./pages/Media"
-import Profile from "./pages/Profile"
+import Media from "./pages/media/Media"
+import Profile from "./pages/profile/Profile"
 import Cv from "./pages/cv/Cv"
 import NavBar from './components/navBar/NavBar'
 
@@ -20,6 +20,7 @@ function App() {
 
   return (
     <>
+    
       <div className="App">
         <Router>
           <AnimatePresence exitBeforeEnter>

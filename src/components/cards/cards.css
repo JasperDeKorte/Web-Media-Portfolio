@@ -1,0 +1,18 @@
+.textOrangeUnderline {
+    border-style: solid;
+    border-color: orange;
+    border-left-color: white;
+    border-right-color: white;
+    border-top-color: white;
+}
+
+.cv-mainSections {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background_color: white;
+    height: fit-content;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: black 10px 5px 20px 5px
+}

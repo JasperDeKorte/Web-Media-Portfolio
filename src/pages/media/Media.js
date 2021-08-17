@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import { NavLink } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
@@ -19,12 +20,17 @@ export default function Media() {
             exit="out"
             variants={pageTransitions}
         >
-            <h1>Name</h1>
-            <h2>Info</h2>
-            <h3>Info</h3>
-            <NavLink to="Web-Media-Portfolio">
-                <button>Back</button>
-            </NavLink>
+            <Helmet>
+                <title>My Portfolio | Media</title>
+            </Helmet>
+            <div className="media-container">
+                <h1>Dit is de Media Pagina</h1>
+                <h2>*under development*</h2>
+                <br />
+                <NavLink to="Web-Media-Portfolio">
+                    <button>Back</button>
+                </NavLink>
+            </div>
         </motion.div>
     )
 }

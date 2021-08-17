@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import { NavLink } from 'react-router-dom'
 import camera from "../assets/camera.png"
 import heart from "../assets/heart.png"
@@ -24,6 +25,9 @@ export default function landingpage() {
     return (
         
         <div className="landingPage-container">
+            <Helmet>
+                <title>My Portfolio | Hub</title>
+            </Helmet>
             <motion.div
                 initial="out"
                 animate="in"

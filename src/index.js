@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import './pages/cv/Cv.css';
 import "./components/navBar/navBar.css"
+import "./pages/media/media.css"
+import "./pages/profile/profile.css"
+import "./components/cards/cards.css"
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
