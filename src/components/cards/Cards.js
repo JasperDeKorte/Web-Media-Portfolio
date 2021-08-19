@@ -7,11 +7,6 @@ export default function Cards(props) {
             <p>
                 {props.cardsDescription}
             </p>
-            {props.cardsDescription2}
-            {props.cardsDescription3}
-            {props.cardsDescription4}
-            {props.cardsDescription5}
-            {props.cardsDescription6}
         </div>
     )
 }

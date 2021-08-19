@@ -6,6 +6,9 @@ import "./components/navBar/navBar.css"
 import "./pages/media/media.css"
 import "./pages/profile/profile.css"
 import "./components/cards/cards.css"
+import "./components/work/work.css"
+import "./components/projects/projects.css"
+import "./components/education/education.css"
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

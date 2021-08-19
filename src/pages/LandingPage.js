@@ -2,7 +2,6 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import { NavLink } from 'react-router-dom'
 import camera from "../assets/camera.png"
-import heart from "../assets/heart.png"
 import user from "../assets/user.png"
 import cv from "../assets/cv.png"
 import { motion } from "framer-motion"

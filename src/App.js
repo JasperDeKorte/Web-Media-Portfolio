@@ -5,18 +5,15 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  useLocation,
 } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import Media from "./pages/media/Media"
 import Profile from "./pages/profile/Profile"
 import Cv from "./pages/cv/Cv"
-import NavBar from './components/navBar/NavBar'
 
 
 
 function App() {
-  const location = useLocation
 
   return (
     <>
