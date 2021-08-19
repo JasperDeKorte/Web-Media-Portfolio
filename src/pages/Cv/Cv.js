@@ -113,6 +113,15 @@ export default function Cv() {
                                         <br />
                                     </div>
                                     <div>
+                                        <h2>Cursussen & Trainingen</h2>
+                                        <Education
+                                            educationTitle="Arbocentrum"
+                                            educationDescription="VCA Vol"
+                                            educationLength="Veiligheid voor operationeel Leidinggevende"
+                                            educationAward="Certificaat behaald"
+                                        />
+                                    </div>
+                                    <div>
                                         <h1>Persoonlijke Skills</h1>
                                         <div>
                                             <div className="cv-educationTitleStyle">Talen</div>
@@ -122,10 +131,10 @@ export default function Cv() {
                                     <div>
                                         <h1>Hobbies & interesses</h1>
                                         <ul>
-                                            <li><div className="cv-educationTitleStyle">Coderen</div></li>
+                                            <li><div className="cv-educationTitleStyle">Programmeren</div></li>
                                             <li><div className="cv-educationTitleStyle">Video & Fotografie</div></li>
                                             <li><div className="cv-educationTitleStyle">Computers & Gadgets</div></li>
-                                            <li><div className="cv-educationTitleStyle">Motor & Motorrijden</div></li>
+                                            <li><div className="cv-educationTitleStyle">Motors & Motorrijden</div></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -135,9 +144,9 @@ export default function Cv() {
                         <div className="cv-mainContainer">
                             <Cards
                                 cardsTitle="OVER MIJ"
-                                cardsDescription="Hardwerkende persoon met een professionele klantgerichte attitude die doorzet tot de klus geklaard is. Creatief zijn is een van mijn sterke kanten en dus ook hiermee in de gelegenheid om nieuw inzicht te geven bij uitdagingen.
+                                cardsDescription="Hardwerkende persoon met een professionele klantgerichte attitude die doorzet tot de klus geklaard is. Creatief zijn is een van mijn sterke kanten en ben dus ook hiermee in de gelegenheid om nieuw inzicht te geven bij uitdagingen.
                                     Werken bij een mooi, gezellig bedrijf die de mogelijkheid bied jezelf door te ontwikkelen om zo van meer waarden te worden voor het bedrijf is mijn doel.
-                                    des te meer uitdaging, des te meer te leren!"
+                                    Des te meer uitdaging, des te meer te leren!"
                             />
 
 
@@ -150,7 +159,7 @@ export default function Cv() {
                                         projectDescription="Deze website, mijn portfolio voor mijn web applicaties en media creaties"
                                     />
                                     <Projects
-                                        projectLink="https://github.com/SnelleJaapie/Lord-Of-The-Rings-Trivia-Eindopdracht"
+                                        projectLink="https://github.com/JasperDeKorte/Lord-of-The-Rings-Trivia"
                                         projectTitle="Lord of The Rings - Trivia"
                                         projectDescription="Een kort, leuk spelletje om je kennis van LOTR te testen, gemaakt als eindopdracht voor mijn studie."
                                     />
@@ -190,10 +199,7 @@ export default function Cv() {
                                     />
                                 </div>
                             </div>
-                            <Cards
-                                cardsTitle="EXPERIENCE"
-                                cardsDescription="Incididunt nulla ullamco consequat pariatur exercitation cupidatat enim nostrud. <br></br>Ad nisi enim mollit incididunt esse incididunt deserunt non fugiat est nostrud consequat. <br></br>Sunt commodo culpa non labore adipisicing incididunt minim eu minim Lorem labore ea. <br></br>Pariatur culpa sunt non aliqua ad et sit aliqua occaecat elit. Officia pariatur labore cillum elit ex nulla."
-                            />
+                           
                         </div>
                     </div>
                 </div>
