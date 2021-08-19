@@ -119,14 +119,17 @@ export default function Cv() {
                                             <div className="cv-educationDiscriptionStyle">Nederlands - Moedertaal<br />Engels - Vloeiend<br />Duits - Basis</div>
                                         </div>
                                     </div>
+                                    <div>
+                                        <h1>Hobbies & interesses</h1>
+                                        <ul>
+                                            <li><div className="cv-educationTitleStyle">Coderen</div></li>
+                                            <li><div className="cv-educationTitleStyle">Video & Fotografie</div></li>
+                                            <li><div className="cv-educationTitleStyle">Computers & Gadgets</div></li>
+                                            <li><div className="cv-educationTitleStyle">Motor & Motorrijden</div></li>
+                                        </ul>
+                                    </div>
                                 </div>
-
                             </div>
-                            <NavLink className="cv-homePageBtn" to="/Web-Media-Portfolio">
-                                <button className="cv-homePageBtn" type="button" class="">Homepage</button>
-                            </NavLink>
-
-
                         </div>
 
                         <div className="cv-mainContainer">
