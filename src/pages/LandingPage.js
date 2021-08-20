@@ -56,12 +56,14 @@ export default function landingpage() {
                         onHoverEnd={e => { }}
                         whileTap={{ scale: 0.9 }}
                     >
-                        <NavLink to="/Cv">
                         <div className="menuNavWords">
                             CV
-                        <img className="landingPage-Items" src={cv} alt="not available" />
                         </div>
-                            
+                        <NavLink to="/Cv">
+                            <div className="">
+                                <img className="landingPage-Items" src={cv} alt="not available" />
+                            </div>
+
                         </NavLink>
                     </motion.div>
 

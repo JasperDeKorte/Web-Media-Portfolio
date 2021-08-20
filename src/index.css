@@ -36,3 +36,17 @@ body {
   clip-path: circle();
   background: transparent;
 }
+.menuNavWords {
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  
+}
+.menuNavWords:hover {
+  
+}

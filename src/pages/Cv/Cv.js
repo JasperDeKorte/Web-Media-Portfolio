@@ -1,6 +1,5 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { NavLink } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import home from "../../assets/home.png"
 import birthday from "../../assets/birthday.png"
@@ -79,6 +78,8 @@ export default function Cv() {
                                         HTML/CSS<br />
                                         JAVASCRIPT<br />
                                         REACT<br />
+                                        NPM<br />
+                                        NodeJS<br />
                                         GITHUB<br />
                                         ADOBE<br />
                                         <li>Premiere</li>
@@ -124,8 +125,8 @@ export default function Cv() {
                                     <div>
                                         <h1>Persoonlijke Skills</h1>
                                         <div>
-                                            <div className="cv-educationTitleStyle">Talen</div>
-                                            <div className="cv-educationDiscriptionStyle">Nederlands - Moedertaal<br />Engels - Vloeiend<br />Duits - Basis</div>
+                                            <div className="cv-educationTitleStyle" style={{fontSize: 20}}>Talen</div>
+                                            <div className="">Nederlands - moedertaal<br />Engels - vloeiend<br />Duits - basis</div>
                                         </div>
                                     </div>
                                     <div>
@@ -144,8 +145,8 @@ export default function Cv() {
                         <div className="cv-mainContainer">
                             <Cards
                                 cardsTitle="OVER MIJ"
-                                cardsDescription="Hardwerkende persoon met een professionele klantgerichte attitude die doorzet tot de klus geklaard is. Creatief zijn is een van mijn sterke kanten en ben dus ook hiermee in de gelegenheid om nieuw inzicht te geven bij uitdagingen.
-                                    Werken bij een mooi, gezellig bedrijf die de mogelijkheid bied jezelf door te ontwikkelen om zo van meer waarden te worden voor het bedrijf is mijn doel.
+                                cardsDescription="Hardwerkend persoon met een professionele klantgerichte attitude die doorzet tot de klus geklaard is. Creatief zijn is een van mijn sterke kanten en ben dus ook hiermee in de gelegenheid om nieuw inzicht te geven bij uitdagingen.
+                                    Werken bij een mooi, gezellig bedrijf die de mogelijkheid biedt jezelf door te ontwikkelen en zo waardevoller te worden voor het bedrijf, is mijn doel.
                                     Des te meer uitdaging, des te meer te leren!"
                             />
 
@@ -156,7 +157,7 @@ export default function Cv() {
                                     <Projects
                                         projectLink="https://snellejaapie.github.io/Web-Media-Portfolio/"
                                         projectTitle="Mijn Web & Media Portfolio"
-                                        projectDescription="Deze website, mijn portfolio voor mijn web applicaties en media creaties"
+                                        projectDescription="Bovenstaande website, voor mijn portfolio, web applicaties en media creaties."
                                     />
                                     <Projects
                                         projectLink="https://github.com/JasperDeKorte/Lord-of-The-Rings-Trivia"
@@ -168,35 +169,35 @@ export default function Cv() {
 
 
                             <div className="cv-mainSections">
-                                <h1 className="textOrangeUnderline">WERK ERVARING</h1>
+                                <h1 className="textOrangeUnderline">WERKERVARING</h1>
                                 <div>
                                     <Work
                                         employer="AENC Audiovisual"
                                         jobTitle="Audiovisueel Technician"
-                                        jobDuration="Mei 2020 - Mei 2021"
-                                        jobDescription="Het aanbrengen van Audiovisuele oplossingen bij scholen en
-                                        bedrijven waaronder Digiborden en Narrowcasting."
+                                        jobDuration="mei 2020 - mei 2021"
+                                        jobDescription="Het aanbrengen van audiovisuele oplossingen bij scholen en
+                                        bedrijven waaronder digiborden en narrowcasting."
                                     />
                                     <Work
                                         employer="ANWB"
-                                        jobTitle="Voertuighulpverlener Buitenland (Tijdelijk)"
+                                        jobTitle="Voertuighulpverlener buitenland (tijdelijk)"
                                         jobDuration="juli 2019 - september 2019"
                                         jobDescription="Het behandelen van het eerste contact, het verlenen van bijstand en het sturen
                                                 van hulp bij pechgevallen in het buitenland, alsmede het verlenen van
-                                                vervolgbijstand (met name in Duitsland)"
+                                                vervolgbijstand (met name in Duitsland)."
                                     />
                                     <Work
                                         employer="Gebo Gelato"
-                                        jobTitle="Logistiek Medewerker (Seizoens  Werk)"
+                                        jobTitle="Logistiek Medewerker (seizoenswerk)"
                                         jobDuration="april 2016 - oktober 2019"
-                                        jobDescription="Uitvoeren van logistieke operaties op de vloer en het beheer van het vloerpersoneel."
+                                        jobDescription="Uitvoeren van logistieke operaties op de vloer en aansturen van het vloerpersoneel."
                                     />
-                                    <Work
+                                    {/* <Work
                                         employer="De Bogerd"
                                         jobTitle="Junior Toezichthouder"
-                                        jobDuration="Februari 2016 - September 2016"
+                                        jobDuration="februari 2016 - september 2016"
                                         jobDescription="Het toezichthouden op zwembadgasten en assisteren bij noodgevallen en vragen."
-                                    />
+                                    /> */}
                                 </div>
                             </div>
                            
