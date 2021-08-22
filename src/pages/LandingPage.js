@@ -57,7 +57,7 @@ export default function landingpage() {
                         whileTap={{ scale: 0.9 }}
                     >
                         <div className="menuNavWords">
-                            CV
+                            test
                         </div>
                         <NavLink to="/Cv">
                             <div className="">
