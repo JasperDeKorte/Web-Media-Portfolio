@@ -155,12 +155,12 @@ export default function Cv() {
                                 <h1 className="textOrangeUnderline">PROJECTEN</h1>
                                 <div>
                                     <Projects
-                                        projectLink="https://snellejaapie.github.io/Web-Media-Portfolio/"
+                                        projectLink="https://jasperdekorte.github.io/Web-Media-Portfolio/"
                                         projectTitle="Mijn Web & Media Portfolio"
                                         projectDescription="Bovenstaande website, voor mijn portfolio, web applicaties en media creaties."
                                     />
                                     <Projects
-                                        projectLink="https://github.com/JasperDeKorte/Lord-of-The-Rings-Trivia"
+                                        projectLink="https://jasperdekorte.github.io/Lord-of-The-Rings-Trivia-Graduation-Project-/"
                                         projectTitle="Lord of The Rings - Trivia"
                                         projectDescription="Een kort, leuk spelletje om je kennis van LOTR te testen, gemaakt als eindopdracht voor mijn studie."
                                     />
@@ -174,7 +174,7 @@ export default function Cv() {
                                     <Work
                                         employer="AENC Audiovisual"
                                         jobTitle="Audiovisueel Technician"
-                                        jobDuration="mei 2020 - mei 2021"
+                                        jobDuration="mei 2020 - maart 2021"
                                         jobDescription="Het aanbrengen van audiovisuele oplossingen bij scholen en
                                         bedrijven waaronder digiborden en narrowcasting."
                                     />
