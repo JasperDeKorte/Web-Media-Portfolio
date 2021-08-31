@@ -1,0 +1,15 @@
+{
+    "nl": {
+        "aboutMe": "Over mij",
+        "profile": {
+            "professionalSkills": "Professionele Vaardigheden"
+        }
+    },
+
+    "en": {
+        "aboutMe": "About me",
+        "profile": {
+            "professionalSkills": "Professional Skills"
+        }
+    }
+}

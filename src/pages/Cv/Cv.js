@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState, useContext } from 'react'
 import { Helmet } from 'react-helmet'
 import { motion } from 'framer-motion'
 import home from "../../assets/home.png"
@@ -10,8 +10,13 @@ import Cards from '../../components/cards/Cards'
 import Work from "../../components/work/Work"
 import Projects from "../../components/projects/Projects"
 import Education from '../../components/education/Education'
+import content from "../../data/content.json"
+import languagesContext from "../../App"
+
+
 
 export default function Cv() {
+
     const pageTransitions = {
         in: {
             opacity: 1,
@@ -22,6 +27,20 @@ export default function Cv() {
             scaleX: 0
         }
     };
+
+    const [language, setLanguage] = useState(true)
+    const [button, setButton] = useState("English")
+
+    function handleLanguageButton() {
+        if (language === true) {
+            setLanguage(false)
+            setButton("Nederlands")
+        } else {
+            setLanguage(true)
+            setButton("English")
+        }
+    }
+
     return (
         <>
             <Helmet>
@@ -29,6 +48,11 @@ export default function Cv() {
                     My portfolio | CV
                 </title>
             </Helmet>
+
+            {/* <div>{language ? (content.nl.aboutMe) : (content.en.aboutMe)}</div> */}
+
+
+
             <div className="cv-parentContainer">
                 <div className="cv-pageContainer">
                     <div className="cv-topDivContainer">
@@ -59,6 +83,12 @@ export default function Cv() {
                                 <img className="profileIcons" src={phone} alt="" />
                                 06-37313012
                             </p>
+                            <div>
+                                <button onClick={() => {
+                                    handleLanguageButton()
+
+                                }}>{button}</button>
+                            </div>
                         </div>
                     </div>
 
@@ -73,7 +103,7 @@ export default function Cv() {
                         <div className="cv-profileContainer">
                             <div className="cv-profileInfo">
                                 <div>
-                                    <h1>Professionele Vaardigheden</h1>
+                                    <h1>{language ? (content.nl.profile.professionalSkills) : (content.en.profile.professionalSkills)}</h1>
                                     <div>
                                         HTML/CSS<br />
                                         JAVASCRIPT<br />
@@ -125,7 +155,7 @@ export default function Cv() {
                                     <div>
                                         <h1>Persoonlijke Skills</h1>
                                         <div>
-                                            <div className="cv-educationTitleStyle" style={{fontSize: 20}}>Talen</div>
+                                            <div className="cv-educationTitleStyle" style={{ fontSize: 20 }}>Talen</div>
                                             <div className="">Nederlands - moedertaal<br />Engels - vloeiend<br />Duits - basis</div>
                                         </div>
                                     </div>
@@ -200,7 +230,7 @@ export default function Cv() {
                                     /> */}
                                 </div>
                             </div>
-                           
+
                         </div>
                     </div>
                 </div>

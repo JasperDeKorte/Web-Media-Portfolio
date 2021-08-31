@@ -81,7 +81,6 @@ export default function landingpage() {
                         </NavLink> */}
                     </motion.div>
 
-
                 </div>
             </motion.div>
         </div>
