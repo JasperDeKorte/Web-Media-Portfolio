@@ -16,6 +16,16 @@ h1 {
     width: 2rem;
     height: 2rem;
 }
+.languageIcon {
+    position: absolute;
+    bottom: -4px;
+    right: 7rem;
+    
+}
+.languageIconSize {
+    width: 3rem;
+    height: 1.3rem;
+}
 
 #frontEndDeveloper {
     color: #F78301

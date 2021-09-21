@@ -1,15 +1,153 @@
 {
     "nl": {
-        "aboutMe": "Over mij",
+        "aboutMe": "OVER MIJ",
+        "aboutMeDisc": "Hardwerkend persoon met een professionele klantgerichte attitude die doorzet tot de klus geklaard is. Creatief zijn is een van mijn sterke kanten en ben dus ook hiermee in de gelegenheid om nieuw inzicht te geven bij uitdagingen. Werken bij een mooi, gezellig bedrijf die de mogelijkheid biedt jezelf door te ontwikkelen en zo waardevoller te worden voor het bedrijf, is mijn doel. Des te meer uitdaging, des te meer te leren!",
+        "projects": {
+            "projects": "PROJECTS",
+            "portfolio": {
+                "title" : "Mijn Web & Media Portfolio",
+                "disc": "Bovenstaande website, voor mijn portfolio, web applicaties en media creaties."
+            },
+            "trivia": {
+                "title" : "Lord of The Rings - Trivia",
+                "disc": "Een kort, leuk spelletje om je kennis van LOTR te testen, gemaakt als eindopdracht voor mijn studie."
+            }
+        },
+        "workExperience": {
+            "workExperience": "WERKERVARING",
+            "aenc": {
+                "title": "Audiovisueel Technician",
+                "disc": "Het aanbrengen van audiovisuele oplossingen bij scholen en bedrijven waaronder digiborden en narrowcasting.",
+                "lenght": "mei 2020 - maart 2021"
+            },
+            "anwb": {
+                "title": "Voertuighulpverlener buitenland (tijdelijk) ",
+                "disc": "Het behandelen van het eerste contact, het verlenen van bijstand en het sturen van hulp bij pechgevallen in het buitenland, alsmede het verlenen van vervolgbijstand (met name in Duitsland).",
+                "lenght": " juli 2019 - september 2019"
+            },
+            "gebo": {
+                "title": "Logistiek Medewerker (seizoenswerk)",
+                "disc": "Uitvoeren van logistieke operaties op de vloer en aansturen van het vloerpersoneel.",
+                "lenght": "april 2016 - oktober 2019"
+            }
+        },
         "profile": {
-            "professionalSkills": "Professionele Vaardigheden"
+            "professionalSkills": "Professionele Vaardigheden",
+            "education": {
+                "education": "Educatie",
+                "novi": {
+                    "lenght": "maart 2021 - augustus 2021",
+                    "certificate": "Certificaat behaald"
+                },
+                "glr": {
+                    "study": "MBO 4 Audiovisuele Productie",
+                    "lenght": "augustus 2013 - april 2017",
+                    "certificate": "Diploma behaald"
+                },
+                "wvo": {
+                    "lenght": "september 2009 - april 2013",
+                    "certificate": "Diploma behaald"
+                },
+                "courses": {
+                    "courses": "Cursussen & trainingen",
+                    "vca": {
+                        "disc": "veiligheid voor operationeel Leidinggevende",
+                        "certificate": "Certificaat behaald"
+                    }
+                }
+            },
+            "personalSkills": {
+                "personalSkills": "Persoonlijke Skills",
+                "langauges": {
+                    "languages": "Talen",
+                    "dutch": "Nederlands - moedertaal",
+                    "english": "Engels - vloeiend",
+                    "german": "Duits - basis"
+                }
+            },
+            "hobbiesInterests": {
+                "hobbies": "hobbies & interesses",
+                "programming": "programmeren",
+                "videoPhoto": "Video & Fotografie",
+                "computerGadgets": "Computers & Gadgets",
+                "motorcycles": "Motoren & Motorrijden"
+            }
         }
     },
 
     "en": {
-        "aboutMe": "About me",
+        "aboutMe": "ABOUT ME",
+        "aboutMeDisc": "Hard-working person with a professional customer-oriented attitude who perseveres until the job is done. Being creative is one of my strong points and I am therefore also able to provide new insight when faced with challenges. Working for a nice, pleasant company that offers the opportunity to further develop yourself and thus become more valuable to the company is my goal. More challenges, more to learn!",
+        "projects": {
+            "projects": "PROJECTS",
+            "portfolio": {
+                "title" : "My Web & Media Portfolio",
+                "disc": "My portfolio website, filled with web applications and media creations"
+            },
+            "trivia": {
+                "title" : "Lord of The Rings - Trivia",
+                "disc": "A fun short little game to test your knowledge of the Lord of the Rings franchise"
+            }
+        },
+        "workExperience": {
+            "workExperience": "WORKEXPERIENCE",
+            "aenc": {
+                "title": "Audiovisual Technician",
+                "disc": "The installation of audiovisual solutions at schools and companies, including digiboards and narrowcasting.",
+                "lenght": "may 2020 - march 2021"
+            },
+            "anwb": {
+                "title": "Vehicle Assistance Abroad (Temporary)",
+                "disc": "Handling the initial contact, providing assistance and sending help in the event of a breakdown abroad, as well as providing follow-up assistance (especially in Germany).",
+                "lenght": "juli 2019 - september 2019"
+            },
+            "gebo": {
+                "title": "Logistics Employee (seasonal)",
+                "disc": "Executing logistic operations and managing the floor personel.",
+                "lenght": "april 2016 - october 2019"
+            }
+        },
         "profile": {
-            "professionalSkills": "Professional Skills"
+            "professionalSkills": "Professional Skills",
+            "education": {
+                "education": "Education",
+                "novi": {
+                    "lenght": "march 2021 - august 2021",
+                    "certificate": "Certificaat Obtained"
+                },
+                "glr": {
+                    "study": "MBO 4 Audiovisual Production",
+                    "lenght": "august 2013 - april 2017",
+                    "certificate": "Diploma Obtained"
+                },
+                "wvo": {
+                    "lenght": "september 2009 - april 2013",
+                    "certificate": "Diploma Obtained"
+                },
+                "courses": {
+                    "courses": "Courses & training",
+                    "vca": {
+                        "disc": "Safety for operational managers",
+                        "certificate": "Certificaat Obtained"
+                    }
+                }
+            },
+            "personalSkills": {
+                "personalSkills": "Personal Skills",
+                "langauges": {
+                    "languages": "Languages",
+                    "dutch": "Dutch - native",
+                    "english": "English - fluent",
+                    "german": "German - basic"
+                }
+            },
+            "hobbiesInterests": {
+                "hobbies": "hobbies & interests",
+                "programming": "Programming",
+                "videoPhoto": "Video & Photography",
+                "computerGadgets": "Computers & Gadgets",
+                "motorcycles": "Motorcycles & Motorcycling"
+            }
         }
     }
 }

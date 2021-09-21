@@ -11,6 +11,8 @@ import Work from "../../components/work/Work"
 import Projects from "../../components/projects/Projects"
 import Education from '../../components/education/Education'
 import content from "../../data/content.json"
+import dutchFlag from "../../assets/dutch-flag.png"
+import englishFlag from "../../assets/english-flag.png"
 import languagesContext from "../../App"
 
 
@@ -88,6 +90,9 @@ export default function Cv() {
                                     handleLanguageButton()
 
                                 }}>{button}</button>
+                                <div className="languageIcon">
+                                    {language ? (<img className="languageIconSize" src={englishFlag} alt="" />) : (<img className="languageIconSize" src={dutchFlag}/>)}
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -120,52 +125,55 @@ export default function Cv() {
                                     </div>
 
                                     <div>
-                                        <h1>Educatie</h1>
+                                        <h1>{language ? (content.nl.profile.education.education) : (content.en.profile.education.education)}</h1>
                                         <Education
                                             educationTitle="Novi Hogeschool B.V."
                                             educationDescription="HBO Front End Development "
-                                            educationLength="maart 2021 - augustus 2021"
-                                            educationAward="Certificaat behaald"
+                                            educationLength={language ? (content.nl.profile.education.novi.lenght) : (content.en.profile.education.novi.lenght)}
+                                            educationAward={language ? (content.nl.profile.education.novi.certificate) : (content.en.profile.education.novi.certificate)}
                                         />
                                         <br />
                                         <Education
                                             educationTitle="Grafisch Lyceum Rotterdam"
-                                            educationDescription="MBO 4 Audiovisuele Productie"
-                                            educationLength="augustus 2013 - april 2017"
-                                            educationAward="Diploma behaald"
+                                            educationDescription={language ? (content.nl.profile.education.glr.study) : (content.en.profile.education.glr.study)}
+                                            educationLength={language ? (content.nl.profile.education.glr.lenght) : (content.en.profile.education.glr.lenght)}
+                                            educationAward={language ? (content.nl.profile.education.glr.certificate) : (content.en.profile.education.glr.certificate)}
                                         />
                                         <br />
                                         <Education
                                             educationTitle="CSG Willem van Oranje"
                                             educationDescription="Mavo TL "
-                                            educationLength="september 2009 - april 2013"
-                                            educationAward="Diploma behaald"
+                                            educationLength={language ? (content.nl.profile.education.wvo.lenght) : (content.en.profile.education.wvo.lenght)}
+                                            educationAward={language ? (content.nl.profile.education.wvo.certificate) : (content.en.profile.education.wvo.certificate)}
                                         />
                                         <br />
                                     </div>
                                     <div>
-                                        <h2>Cursussen & Trainingen</h2>
+                                        <h2>{language ? (content.nl.profile.education.courses.courses) : (content.en.profile.education.courses.courses)}</h2>
                                         <Education
                                             educationTitle="Arbocentrum"
                                             educationDescription="VCA Vol"
-                                            educationLength="Veiligheid voor operationeel Leidinggevende"
-                                            educationAward="Certificaat behaald"
+                                            educationLength={language ? (content.nl.profile.education.courses.vca.disc) : (content.en.profile.education.courses.vca.disc)}
+                                            educationAward={language ? (content.nl.profile.education.courses.vca.certificate) : (content.en.profile.education.courses.vca.certificate)}
                                         />
                                     </div>
                                     <div>
-                                        <h1>Persoonlijke Skills</h1>
+                                        <h1>{language ? (content.nl.profile.personalSkills.personalSkills) : (content.en.profile.personalSkills.personalSkills)}</h1>
                                         <div>
-                                            <div className="cv-educationTitleStyle" style={{ fontSize: 20 }}>Talen</div>
-                                            <div className="">Nederlands - moedertaal<br />Engels - vloeiend<br />Duits - basis</div>
+                                            <div className="cv-educationTitleStyle" style={{ fontSize: 20 }}>{language ? (content.nl.profile.personalSkills.langauges.languages) : (content.en.profile.personalSkills.langauges.languages)}</div>
+                                            <div className="">
+                                            {language ? (content.nl.profile.personalSkills.langauges.dutch) : (content.en.profile.personalSkills.langauges.dutch)}<br />
+                                            {language ? (content.nl.profile.personalSkills.langauges.english) : (content.en.profile.personalSkills.langauges.english)}<br />
+                                            {language ? (content.nl.profile.personalSkills.langauges.german) : (content.en.profile.personalSkills.langauges.german)}</div>
                                         </div>
                                     </div>
                                     <div>
-                                        <h1>Hobbies & interesses</h1>
+                                        <h1>{language ? (content.nl.profile.hobbiesInterests.hobbies) : (content.en.profile.hobbiesInterests.hobbies)}</h1>
                                         <ul>
-                                            <li><div className="cv-educationTitleStyle">Programmeren</div></li>
-                                            <li><div className="cv-educationTitleStyle">Video & Fotografie</div></li>
-                                            <li><div className="cv-educationTitleStyle">Computers & Gadgets</div></li>
-                                            <li><div className="cv-educationTitleStyle">Motors & Motorrijden</div></li>
+                                            <li><div className="cv-educationTitleStyle">{language ? (content.nl.profile.hobbiesInterests.programming) : (content.en.profile.hobbiesInterests.programming)}</div></li>
+                                            <li><div className="cv-educationTitleStyle">{language ? (content.nl.profile.hobbiesInterests.videoPhoto) : (content.en.profile.hobbiesInterests.videoPhoto)}</div></li>
+                                            <li><div className="cv-educationTitleStyle">{language ? (content.nl.profile.hobbiesInterests.computerGadgets) : (content.en.profile.hobbiesInterests.computerGadgets)}</div></li>
+                                            <li><div className="cv-educationTitleStyle">{language ? (content.nl.profile.hobbiesInterests.motorcycles) : (content.en.profile.hobbiesInterests.motorcycles)}</div></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -174,53 +182,48 @@ export default function Cv() {
 
                         <div className="cv-mainContainer">
                             <Cards
-                                cardsTitle="OVER MIJ"
-                                cardsDescription="Hardwerkend persoon met een professionele klantgerichte attitude die doorzet tot de klus geklaard is. Creatief zijn is een van mijn sterke kanten en ben dus ook hiermee in de gelegenheid om nieuw inzicht te geven bij uitdagingen.
-                                    Werken bij een mooi, gezellig bedrijf die de mogelijkheid biedt jezelf door te ontwikkelen en zo waardevoller te worden voor het bedrijf, is mijn doel.
-                                    Des te meer uitdaging, des te meer te leren!"
+                                cardsTitle={language ? (content.nl.aboutMe) : (content.en.aboutMe)}
+                                cardsDescription={language ? (content.nl.aboutMeDisc) : (content.en.aboutMeDisc)}
                             />
 
 
                             <div className="cv-mainSections">
-                                <h1 className="textOrangeUnderline">PROJECTEN</h1>
+                                <h1 className="textOrangeUnderline">{language ? (content.nl.projects.projects) : (content.en.projects.projects)}</h1>
                                 <div>
                                     <Projects
                                         projectLink="https://jasperdekorte.github.io/Web-Media-Portfolio/"
-                                        projectTitle="Mijn Web & Media Portfolio"
-                                        projectDescription="Bovenstaande website, voor mijn portfolio, web applicaties en media creaties."
+                                        projectTitle={language ? (content.nl.projects.portfolio.title) : (content.en.projects.portfolio.title)}
+                                        projectDescription={language ? (content.nl.projects.portfolio.disc) : (content.en.projects.portfolio.disc)}
                                     />
                                     <Projects
                                         projectLink="https://jasperdekorte.github.io/Lord-of-The-Rings-Trivia-Graduation-Project-/"
-                                        projectTitle="Lord of The Rings - Trivia"
-                                        projectDescription="Een kort, leuk spelletje om je kennis van LOTR te testen, gemaakt als eindopdracht voor mijn studie."
+                                        projectTitle={language ? (content.nl.projects.trivia.title) : (content.en.projects.trivia.title)}
+                                        projectDescription={language ? (content.nl.projects.trivia.disc) : (content.en.projects.trivia.disc)}
                                     />
                                 </div>
                             </div>
 
 
                             <div className="cv-mainSections">
-                                <h1 className="textOrangeUnderline">WERKERVARING</h1>
+                                <h1 className="textOrangeUnderline">{language ? (content.nl.workExperience.workExperience) : (content.en.workExperience.workExperience)}</h1>
                                 <div>
                                     <Work
                                         employer="AENC Audiovisual"
-                                        jobTitle="Audiovisueel Technician"
-                                        jobDuration="mei 2020 - maart 2021"
-                                        jobDescription="Het aanbrengen van audiovisuele oplossingen bij scholen en
-                                        bedrijven waaronder digiborden en narrowcasting."
+                                        jobTitle={language ? (content.nl.workExperience.aenc.title) : (content.en.workExperience.aenc.title)}
+                                        jobDuration={language ? (content.nl.workExperience.aenc.lenght) : (content.en.workExperience.aenc.lenght)}
+                                        jobDescription={language ? (content.nl.workExperience.aenc.disc) : (content.en.workExperience.aenc.disc)}
                                     />
                                     <Work
                                         employer="ANWB"
-                                        jobTitle="Voertuighulpverlener buitenland (tijdelijk)"
-                                        jobDuration="juli 2019 - september 2019"
-                                        jobDescription="Het behandelen van het eerste contact, het verlenen van bijstand en het sturen
-                                                van hulp bij pechgevallen in het buitenland, alsmede het verlenen van
-                                                vervolgbijstand (met name in Duitsland)."
+                                        jobTitle={language ? (content.nl.workExperience.anwb.title) : (content.en.workExperience.anwb.title)}
+                                        jobDuration={language ? (content.nl.workExperience.anwb.lenght) : (content.en.workExperience.anwb.lenght)}
+                                        jobDescription={language ? (content.nl.workExperience.anwb.disc) : (content.en.workExperience.anwb.disc)}
                                     />
                                     <Work
                                         employer="Gebo Gelato"
-                                        jobTitle="Logistiek Medewerker (seizoenswerk)"
-                                        jobDuration="april 2016 - oktober 2019"
-                                        jobDescription="Uitvoeren van logistieke operaties op de vloer en aansturen van het vloerpersoneel."
+                                        jobTitle={language ? (content.nl.workExperience.gebo.title) : (content.en.workExperience.gebo.title)}
+                                        jobDuration={language ? (content.nl.workExperience.gebo.lenght) : (content.en.workExperience.gebo.lenght)}
+                                        jobDescription={language ? (content.nl.workExperience.gebo.disc) : (content.en.workExperience.gebo.disc)}
                                     />
                                     {/* <Work
                                         employer="De Bogerd"
