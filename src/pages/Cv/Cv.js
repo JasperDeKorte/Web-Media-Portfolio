@@ -31,17 +31,35 @@ export default function Cv() {
     };
 
     const [language, setLanguage] = useState(true)
-    const [button, setButton] = useState("English")
+    const [buttonText, setButtonText] = useState("Nederlands")
+    const [buttonImg, setButtonImg] = useState(dutchFlag)
 
+    function handleImageOnMouseEnter() {
+        if (buttonImg === englishFlag) {
+            setButtonImg(dutchFlag)
+        } else {
+            setButtonImg(englishFlag)
+        }
+    }
+    function handleImageOnMouseLeave() {
+        if (buttonImg === dutchFlag) {
+            setButtonImg(englishFlag)
+        } else {
+            setButtonImg(dutchFlag)
+        }
+    }
+    
     function handleLanguageButton() {
         if (language === true) {
             setLanguage(false)
-            setButton("Nederlands")
+            setButtonImg(dutchFlag)
+            
         } else {
             setLanguage(true)
-            setButton("English")
+            setButtonImg(englishFlag)
         }
     }
+
 
     return (
         <>
@@ -50,10 +68,6 @@ export default function Cv() {
                     My portfolio | CV
                 </title>
             </Helmet>
-
-            {/* <div>{language ? (content.nl.aboutMe) : (content.en.aboutMe)}</div> */}
-
-
 
             <div className="cv-parentContainer">
                 <div className="cv-pageContainer">
@@ -85,15 +99,15 @@ export default function Cv() {
                                 <img className="profileIcons" src={phone} alt="" />
                                 06-37313012
                             </p>
-                            <div>
-                                <button onClick={() => {
-                                    handleLanguageButton()
-
-                                }}>{button}</button>
-                                <div className="languageIcon">
-                                    {language ? (<img className="languageIconSize" src={englishFlag} alt="" />) : (<img className="languageIconSize" src={dutchFlag}/>)}
-                                </div>
-                            </div>
+                            
+                                <img className="translateBtn" src={buttonImg} alt="" 
+                                onClick={() => {handleLanguageButton()}}
+                                onMouseEnter={() => {handleImageOnMouseEnter()}} 
+                                onMouseLeave={() => {handleImageOnMouseLeave()}}
+                                />
+                                
+                            
+                            
                         </div>
                     </div>
 
@@ -162,9 +176,9 @@ export default function Cv() {
                                         <div>
                                             <div className="cv-educationTitleStyle" style={{ fontSize: 20 }}>{language ? (content.nl.profile.personalSkills.langauges.languages) : (content.en.profile.personalSkills.langauges.languages)}</div>
                                             <div className="">
-                                            {language ? (content.nl.profile.personalSkills.langauges.dutch) : (content.en.profile.personalSkills.langauges.dutch)}<br />
-                                            {language ? (content.nl.profile.personalSkills.langauges.english) : (content.en.profile.personalSkills.langauges.english)}<br />
-                                            {language ? (content.nl.profile.personalSkills.langauges.german) : (content.en.profile.personalSkills.langauges.german)}</div>
+                                                {language ? (content.nl.profile.personalSkills.langauges.dutch) : (content.en.profile.personalSkills.langauges.dutch)}<br />
+                                                {language ? (content.nl.profile.personalSkills.langauges.english) : (content.en.profile.personalSkills.langauges.english)}<br />
+                                                {language ? (content.nl.profile.personalSkills.langauges.german) : (content.en.profile.personalSkills.langauges.german)}</div>
                                         </div>
                                     </div>
                                     <div>

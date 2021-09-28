@@ -1,3 +1,5 @@
+
+
 :root {
     --orange-LR: linear-gradient(to right, rgb(248, 132, 0), #d86800af);
     --blue-RL: linear-gradient(to left, rgb(248, 132, 0), #994a01);
@@ -16,6 +18,39 @@ h1 {
     width: 2rem;
     height: 2rem;
 }
+.translateBtn {
+    color: grey;
+    width: 50px;
+    height: 25px;
+    transition: all 0.1s;
+    border-style: solid;
+    border-radius: 5px;
+}
+.translateBtn:hover {
+    border-color: lightgray;
+}
+
+.translateBtn:active {
+    height: 20px;
+    width: 45px;
+}
+/* .translateBtnImage {
+    background-image: url("../../assets/dutch-flag.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100px 25px;
+    overflow: hidden;
+    width: 100px;
+    height: 25px;
+    transition-duration: 0.2s;
+}
+.translateBtnImage:hover {
+    background-image: url("../../assets/english-flag.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100px 25px;
+} */
+
 .languageIcon {
     position: absolute;
     bottom: -4px;
@@ -119,4 +154,31 @@ h1 {
 }
 .cv-mainContainer p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+
+
+@media screen and (max-width: 376px){
+    .cv-profileContainer h1 {
+        color: rgb(165, 9, 170);
+    }
+
+    .cv-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .cv-profileContainer {
+        width: fit-content;
+        display: flex;
+        align-items: center;    
+    }
+    .cv-profileInfo {
+        width: fit-content;
+        align-items: center;
+        justify-content: center;
+    }
+    .cv-pageContainer {
+        flex: 0;
+    }
 }
