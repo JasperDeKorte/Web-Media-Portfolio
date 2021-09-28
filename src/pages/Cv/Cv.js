@@ -48,12 +48,12 @@ export default function Cv() {
             setButtonImg(dutchFlag)
         }
     }
-    
+
     function handleLanguageButton() {
         if (language === true) {
             setLanguage(false)
             setButtonImg(dutchFlag)
-            
+
         } else {
             setLanguage(true)
             setButtonImg(englishFlag)
@@ -99,15 +99,13 @@ export default function Cv() {
                                 <img className="profileIcons" src={phone} alt="" />
                                 06-37313012
                             </p>
-                            
-                                <img className="translateBtn" src={buttonImg} alt="" 
-                                onClick={() => {handleLanguageButton()}}
-                                onMouseEnter={() => {handleImageOnMouseEnter()}} 
-                                onMouseLeave={() => {handleImageOnMouseLeave()}}
+                            <div>
+                                <img className="translateBtn" src={buttonImg} alt=""
+                                    onClick={() => { handleLanguageButton() }}
+                                    onMouseEnter={() => { handleImageOnMouseEnter() }}
+                                    onMouseLeave={() => { handleImageOnMouseLeave() }}
                                 />
-                                
-                            
-                            
+                            </div>
                         </div>
                     </div>
 
