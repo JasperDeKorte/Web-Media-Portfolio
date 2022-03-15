@@ -1,24 +1,16 @@
 body {
-  
 }
 
 .landingPage-container {
-  background-image: linear-gradient(to right, #00090E, #004B72);
-  width: 100%;
-  height: 90rem;
-}
-
-.landingPage-mainSection {
-  width: 100%;
-  height: 80rem;
+  background-image: linear-gradient(to right, #00090e, #004b72);
+  height: 98vh;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  
+  justify-content: center;
+  flex-direction: column;
 }
 
 .landingPage-DivItems {
-  
 }
 
 .landingPage-Items {
@@ -26,27 +18,15 @@ body {
   height: 100px;
 }
 
-#circle {
-  position: absolute;
-  border: solid;
-  width: 200px;
-  height: 200px;
-  margin: 20px;
-  shape-outside: circle();
-  clip-path: circle();
-  background: transparent;
-}
 .menuNavWords {
   color: white;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-decoration: none;
-  
 }
 .menuNavWords:hover {
-  
 }
