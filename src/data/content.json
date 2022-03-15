@@ -15,6 +15,11 @@
         },
         "workExperience": {
             "workExperience": "WERKERVARING",
+            "omoda": {
+                "title": "Software Engineer",
+                "disc": "Verantwoordelijk zijn voor de frontend van het nieuwe kassa programma van omoda wat in alle omoda filialen gebruikt gaat worden.",
+                "lenght": "oktober 2021 - april 2022"
+            },
             "aenc": {
                 "title": "Audiovisueel Technician",
                 "disc": "Het aanbrengen van audiovisuele oplossingen bij scholen en bedrijven waaronder digiborden en narrowcasting.",
@@ -91,6 +96,11 @@
         },
         "workExperience": {
             "workExperience": "WORKEXPERIENCE",
+            "omoda": {
+                "title": "Software Engineer",
+                "disc": "Working on and being reponsible for the frontend of the new checkout program that will be used in every Omoda store in the netherlands.",
+                "lenght": "october 2021 - april 2022"
+            },
             "aenc": {
                 "title": "Audiovisual Technician",
                 "disc": "The installation of audiovisual solutions at schools and companies, including digiboards and narrowcasting.",
@@ -113,7 +123,7 @@
                 "education": "Education",
                 "novi": {
                     "lenght": "march 2021 - august 2021",
-                    "certificate": "Certificaat Obtained"
+                    "certificate": "Certificate Obtained"
                 },
                 "glr": {
                     "study": "MBO 4 Audiovisual Production",
@@ -128,7 +138,7 @@
                     "courses": "Courses & training",
                     "vca": {
                         "disc": "Safety for operational managers",
-                        "certificate": "Certificaat Obtained"
+                        "certificate": "Certificate Obtained"
                     }
                 }
             },
@@ -142,7 +152,7 @@
                 }
             },
             "hobbiesInterests": {
-                "hobbies": "hobbies & interests",
+                "hobbies": "Hobbies & interests",
                 "programming": "Programming",
                 "videoPhoto": "Video & Photography",
                 "computerGadgets": "Computers & Gadgets",
