@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import { useState } from "react";
 import { Helmet } from "react-helmet";
 import { motion } from "framer-motion";
 import home from "../../assets/home.png";
@@ -81,21 +81,23 @@ export default function Cv() {
             </div>
             <img id="cv-pexel" src={pexel} alt="" />
             <div className="cv-topDivAdres">
-              <p>
+              <p className="cv-topDivAdressContent">
                 <img className="profileIcons" src={home} alt="" />
-                Van leeuwenerf 2, 3263EJ, <br /> Oud-Beijerland
+                <div>
+                  Van leeuwenerf 2, 3263EJ, <br /> Oud-Beijerland
+                </div>
               </p>
-              <p>
+              <p className="cv-topDivAdressContent">
                 <img className="profileIcons" src={birthday} alt="" />
-                05-10-1996
+                <div>05-10-1996</div>
               </p>
-              <p>
+              <p className="cv-topDivAdressContent">
                 <img className="profileIcons" src={details} alt="" />
-                jasperdekorte@gmail.com
+                <div> jasperdekorte@gmail.com</div>
               </p>
-              <p>
+              <p className="cv-topDivAdressContent">
                 <img className="profileIcons" src={phone} alt="" />
-                06-37313012
+                <div>06-37313012</div>
               </p>
               <div>
                 <img
@@ -133,20 +135,11 @@ export default function Cv() {
                       : content.en.profile.professionalSkills}
                   </h1>
                   <div>
-                    HTML/CSS
-                    <br />
-                    JAVASCRIPT
-                    <br />
-                    REACT
-                    <br />
-                    NPM
-                    <br />
-                    NodeJS
-                    <br />
-                    GITHUB
-                    <br />
-                    ADOBE
-                    <br />
+                    <div>HTML/CSS</div>
+                    <div>JAVASCRIPT</div>
+                    <div>REACT</div>
+                    <div>GITHUB</div>
+                    <div>ADOBE</div>
                     <li>Premiere</li>
                     <li>After Effects</li>
                     <li>Photoshop</li>
@@ -321,6 +314,19 @@ export default function Cv() {
                     : content.en.projects.projects}
                 </h1>
                 <div>
+                  <Projects
+                    // projectLink="https://jasperdekorte.github.io/Web-Media-Portfolio/"
+                    projectTitle={
+                      language
+                        ? content.nl.projects.kassa.title
+                        : content.en.projects.kassa.title
+                    }
+                    projectDescription={
+                      language
+                        ? content.nl.projects.kassa.disc
+                        : content.en.projects.kassa.disc
+                    }
+                  />
                   <Projects
                     projectLink="https://jasperdekorte.github.io/Web-Media-Portfolio/"
                     projectTitle={

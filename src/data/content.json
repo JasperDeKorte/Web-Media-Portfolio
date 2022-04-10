@@ -4,6 +4,10 @@
         "aboutMeDisc": "Hardwerkend persoon met een professionele klantgerichte attitude die doorzet tot de klus geklaard is. Creatief zijn is een van mijn sterke kanten en ben dus ook hiermee in de gelegenheid om nieuw inzicht te geven bij uitdagingen. Werken bij een mooi, gezellig bedrijf die de mogelijkheid biedt jezelf door te ontwikkelen en zo waardevoller te worden voor het bedrijf, is mijn doel. Des te meer uitdaging, des te meer te leren!",
         "projects": {
             "projects": "PROJECTS",
+            "kassa": {
+                "title": "Nieuw kassa programma - Omoda winkels",
+                "disc": "Verantwoordelijk voor de frontend van het nieuwe kassa programma in de winkels van omoda."
+            },
             "portfolio": {
                 "title" : "Mijn Web & Media Portfolio",
                 "disc": "Bovenstaande website, voor mijn portfolio, web applicaties en media creaties."
@@ -85,6 +89,10 @@
         "aboutMeDisc": "Hard-working person with a professional customer-oriented attitude who perseveres until the job is done. Being creative is one of my strong points and I am therefore also able to provide new insight when faced with challenges. Working for a nice, pleasant company that offers the opportunity to further develop yourself and thus become more valuable to the company is my goal. More challenges, more to learn!",
         "projects": {
             "projects": "PROJECTS",
+            "kassa": {
+                "title": "New cashregister program - omoda stores",
+                "disc": "Responsible for programming the frontend of the new cashregister program in the omoda stores."
+            },
             "portfolio": {
                 "title" : "My Web & Media Portfolio",
                 "disc": "My portfolio website, filled with web applications and media creations"

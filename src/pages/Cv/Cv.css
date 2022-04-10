@@ -1,173 +1,151 @@
-
-
 :root {
-    --orange-LR: linear-gradient(to right, rgb(248, 132, 0), #d86800af);
-    --blue-RL: linear-gradient(to left, rgb(248, 132, 0), #994a01);
-    
+  --orange-LR: linear-gradient(to right, rgb(248, 132, 0), #d86800af);
+  --blue-RL: linear-gradient(to left, rgb(248, 132, 0), #994a01);
 }
 h1 {
-    font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 #cv-pexel {
-    height: 70rem;
-    width: 70rem;
-    
+  height: 70rem;
+  width: 70rem;
 }
 .profileIcons {
-    width: 2rem;
-    height: 2rem;
+  width: 2rem;
+  height: 2rem;
 }
 .translateBtn {
-    color: grey;
-    width: 50px;
-    height: 25px;
-    transition: all 0.1s;
-    border-style: solid;
-    border-radius: 5px;
+  color: grey;
+  width: 50px;
+  height: 25px;
+  transition: all 0.1s;
+  border-style: solid;
+  border-radius: 5px;
 }
 .translateBtn:hover {
-    border-color: lightgray;
+  border-color: lightgray;
 }
 
 .translateBtn:active {
-    height: 20px;
-    width: 45px;
+  height: 20px;
+  width: 45px;
 }
-/* .translateBtnImage {
-    background-image: url("../../assets/dutch-flag.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100px 25px;
-    overflow: hidden;
-    width: 100px;
-    height: 25px;
-    transition-duration: 0.2s;
-}
-.translateBtnImage:hover {
-    background-image: url("../../assets/english-flag.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100px 25px;
-} */
 
 #frontEndDeveloper {
-    color: #F78301
+  color: #f78301;
 }
 .cv-homePageBtn {
-    color: red;
+  color: red;
 }
 
 .cv-body {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .cv-parentContainer {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1;
 }
 .cv-pageContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    background: white;
-    max-width: 70rem;
-    min-width: 30rem;
-    
-    flex: 1;
-    box-shadow: 0px 0px 50px -15px;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: white;
+  max-width: 70rem;
+  min-width: 30rem;
+
+  flex: 1;
+  box-shadow: 0px 0px 50px -15px;
 }
 .cv-topDivContainer {
-    position: relative;
-    width: 100%;
-    height: 20rem;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 20rem;
+  overflow: hidden;
 }
 .cv-topDivName {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 3rem;
-    top: 2rem;
-    left: 2rem;
-    color: white;
-    position: absolute;
-
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 3rem;
+  top: 2rem;
+  left: 2rem;
+  color: white;
+  position: absolute;
 }
 .cv-topDivGithub {
-    color: #017D94;
-    position: absolute;
-    top: 14rem;
+  color: #017d94;
+  position: absolute;
+  top: 14rem;
 }
 .cv-topDivAdres {
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    position: absolute;
-    top: 1rem;
-    right: 2rem;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
+.cv-topDivAdressContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
 }
 
 .cv-profileContainer {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .cv-profileContainer h1 {
-    color: rgb(0, 56, 78);
+  color: rgb(0, 56, 78);
 }
 
 .cv-profileInfo {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
-    color: black;
-    background-image: var(--orange-LR);
-    width: 15rem;
-    padding: 1rem;
-    margin: 1rem;
-    box-shadow: black 10px 5px 20px 5px 
+  font-family: "Gill Sans", "Gill Sans MT", Calibri;
+  color: black;
+  background-image: var(--orange-LR);
+  width: 15rem;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 0 10px;
 }
 .profineInfolayout {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
-
 
 .cv-mainContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.cv-mainContainer p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+@media screen and (max-width: 376px) {
+  .cv-profileContainer h1 {
+    color: rgb(165, 9, 170);
+  }
+
+  .cv-body {
     display: flex;
     flex-direction: column;
-    width: 100%;
-       
-}
-.cv-mainContainer p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
-}
-
-
-@media screen and (max-width: 376px){
-    .cv-profileContainer h1 {
-        color: rgb(165, 9, 170);
-    }
-
-    .cv-body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    .cv-profileContainer {
-        width: fit-content;
-        display: flex;
-        align-items: center;    
-    }
-    .cv-profileInfo {
-        width: fit-content;
-        align-items: center;
-        justify-content: center;
-    }
-    .cv-pageContainer {
-        flex: 0;
-    }
+    align-items: center;
+  }
+  .cv-profileContainer {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+  }
+  .cv-profileInfo {
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+  }
+  .cv-pageContainer {
+    flex: 0;
+  }
 }
