@@ -435,12 +435,12 @@ export default function Cv() {
                         : content.en.workExperience.gebo.disc
                     }
                   />
-                  {/* <Work
-                                        employer="De Bogerd"
-                                        jobTitle="Junior Toezichthouder"
-                                        jobDuration="februari 2016 - september 2016"
-                                        jobDescription="Het toezichthouden op zwembadgasten en assisteren bij noodgevallen en vragen."
-                                    /> */}
+                  <Work
+                    employer="De Bogerd"
+                    jobTitle="Junior Toezichthouder"
+                    jobDuration="februari 2016 - september 2016"
+                    jobDescription="Het toezichthouden op zwembadgasten en assisteren bij noodgevallen en vragen."
+                  />
                 </div>
               </div>
             </div>
